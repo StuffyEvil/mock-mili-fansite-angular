@@ -1,0 +1,47 @@
+// Import Angular Material.
+@use '~@angular/material' as mat;
+
+// Include the common styles from Angular Material.
+@include mat.core();
+
+
+// Custom Palettes:
+// Yeah, I am probably not doing this conventionally, but I want to
+// lump the different sets of colour together.
+
+// I think I will end up using the Palettes for my styling instead
+// of doing anything with Themes or Mixin.
+// Yeah it's probably not great but I want to have unique palettes
+// for certain things.
+
+// Mili Main Palette:
+// Based on their current logo.
+$mili-main-palette:
+(
+  white: #ffffff,
+  colour: #61b5b7,
+);
+
+// Tellulu Blue Palette:
+$tellulu-blue-palette:
+(
+  normal: #2b2086,
+);
+
+
+// Warning Palette:
+// I honestly don't need to include the Warning Palette into anything,
+// as I will be using the same warning colour everywhere.
+// Assuming that I will be using the Warning Palette at all.
+$warn: mat.define-palette(mat.$red-palette);
+
+
+// Themes:
+
+// Mili Main Theme:
+$mili-main-theme: mat.define-theme((
+  color: (
+    primary: $mili-main-palette,
+    accent: $mili-main-theme
+  )
+));
