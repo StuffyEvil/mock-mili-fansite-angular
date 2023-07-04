@@ -16,11 +16,13 @@
 
 // Mili Main Palette:
 // Based on their current logo.
-$mili-main-palette:
+$mili-main-setup:
 (
-  white: #ffffff,
-  colour: #61b5b7,
+  primary: #61b5b7,
+  secondary: #ffffff,
 );
+$mili-main-palette-1: mat.define-palette($mili-main-setup, primary);
+$mili-main-palette-2: mat.define-palette($mili-main-setup, secondary);
 
 // Tellulu Blue Palette:
 $tellulu-blue-palette:
@@ -41,7 +43,7 @@ $warn: mat.define-palette(mat.$red-palette);
 // Mili Main Theme:
 $mili-main-theme: mat.define-theme((
   color: (
-    primary: $mili-main-palette,
-    accent: $mili-main-theme
+    primary: $mili-main-palette-1,
+    accent: $mili-main-palette-2,
   )
 ));
