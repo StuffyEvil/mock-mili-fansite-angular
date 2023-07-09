@@ -11,3 +11,29 @@
 #footer {
   padding: 1%;
 }
+
+
+/* CSS for Navigational Stuff */
+
+// Unordered List:
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+// List Units:
+li
+{
+  float: left;
+  margin: 5px;
+}
+
+// Buttons:
+.button
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
