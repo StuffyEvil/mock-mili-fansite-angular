@@ -1,49 +1,57 @@
-// Import Angular Material.
-@use '~@angular/material' as mat;
+// // Import Angular Material.
+// @use '~@angular/material' as mat;
 
-// Include the common styles from Angular Material.
-@include mat.core();
-
-
-// Custom Palettes:
-// Yeah, I am probably not doing this conventionally, but I want to
-// lump the different sets of colour together.
-
-// I think I will end up using the Palettes for my styling instead
-// of doing anything with Themes or Mixin.
-// Yeah it's probably not great but I want to have unique palettes
-// for certain things.
-
-// Mili Main Palette:
-// Based on their current logo.
-$mili-main-setup:
-(
-  primary: #61b5b7,
-  secondary: #ffffff,
-);
-$mili-main-palette-1: mat.define-palette($mili-main-setup, primary);
-$mili-main-palette-2: mat.define-palette($mili-main-setup, secondary);
-
-// Tellulu Blue Palette:
-$tellulu-blue-palette:
-(
-  normal: #2b2086,
-);
+// // Include the common styles from Angular Material.
+// @include mat.core();
 
 
-// Warning Palette:
-// I honestly don't need to include the Warning Palette into anything,
-// as I will be using the same warning colour everywhere.
-// Assuming that I will be using the Warning Palette at all.
-$warn: mat.define-palette(mat.$red-palette);
+// // Custom Palettes:
+// // Yeah, I am probably not doing this conventionally, but I want to
+// // lump the different sets of colour together.
+
+// // I think I will end up using the Palettes for my styling instead
+// // of doing anything with Themes or Mixin.
+// // Yeah it's probably not great but I want to have unique palettes
+// // for certain things.
+
+// // Mili Main Palette:
+// // Based on their current logo.
+// $mili-main-setup:
+// (
+//   primary: #61b5b7,
+//   secondary: #ffffff,
+// );
+// $mili-main-palette-1: mat.define-palette($mili-main-setup, primary);
+// $mili-main-palette-2: mat.define-palette($mili-main-setup, secondary);
+
+// // Tellulu Blue Palette:
+// $tellulu-blue-palette:
+// (
+//   normal: #2b2086,
+// );
 
 
-// Themes:
+// // Warning Palette:
+// // I honestly don't need to include the Warning Palette into anything,
+// // as I will be using the same warning colour everywhere.
+// // Assuming that I will be using the Warning Palette at all.
+// $warn: mat.define-palette(mat.$red-palette);
 
-// Mili Main Theme:
-$mili-main-theme: mat.define-theme((
-  color: (
-    primary: $mili-main-palette-1,
-    accent: $mili-main-palette-2,
-  )
-));
+
+// // Themes:
+
+// // Mili Main Theme:
+// $mili-main-theme: mat.define-theme((
+//   color: (
+//     primary: $mili-main-palette-1,
+//     accent: $mili-main-palette-2,
+//   )
+// ));
+
+
+/*
+  As I stated in "theme-mixin.scss", I will be retiring trying to use themes due to the reasons stated there.
+  To reiterate, it's that a theme changing functionality is useless when each element of the webpage as a specific colour choice
+  that can't really be captured with an all-encompassing theme.
+  As such, I will not be using themes anymore.
+*/
