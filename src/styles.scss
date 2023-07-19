@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
@@ -33,27 +32,3 @@ $mili-main: (
   primary: #61b5b7,
   secondary: #ffffff,
 );
-
-.mili-main
-{
-  .colour
-  {
-    .primary {
-      color: map-get($map: $mili-main, $key: primary);
-    }
-    .secondary {
-      color: map-get($map: $mili-main, $key: secondary);
-    }
-  }
-  .background
-  {
-    .primary {
-      background-color: map-get($map: $mili-main, $key: primary);
-    }
-    .secondary {
-      background-color: map-get($map: $mili-main, $key: secondary);
-    }
-  }
-};
-
-// This is pretty cursed to be honest.
