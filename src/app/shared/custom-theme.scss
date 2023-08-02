@@ -1,0 +1,42 @@
+/* Colour Themes */
+
+/*
+  There is probably a better way to do this, but this is my decided methodology.
+
+  I talked about why I won't be using Themes to do my colouring, but it's now in
+  a delete file which I originally decided to keep but now decided to remove for
+  streamlining purposes.
+
+
+  Here it is:
+
+  The main reason being that I actually plan on having many different kind of colour themes depending on the content.
+  Basically a large amount of customization & styling.
+  Adding onto the point above, a main boon for having a theme system like this is to have a built-in system that supports
+  the rapid swapping of themes without needing to do any "hard" coding (it just needs theme info).
+  This is not needed here because the colour scheme will be specifically curated, as the colour is very important for
+  the content it's complimenting and can't really be swapped willy nilly.
+
+  Second is that I am too bummed to go through the effort of incorporating them into the theme-mixin stuff.
+
+  New world of note.
+
+  I have decided to double down on my decision to not use themes for the main reason above.
+  To reiterate, it's that a theme changing functionality is useless when each element of the webpage as a specific colour choice
+  that can't really be captured with an all-encompassing theme.
+  As such, I will not be using themes anymore.
+
+
+  While I can still use Mixin, I feel that it isn't flexible enough for what I want.
+  As in, I want to use the same colours for both the standard 'color' and 'background-color',
+  depending on what I need right now.
+
+
+  Anyhow, this file will serve as a digital storage facility for all of these different themes.
+  It's in the 'shared' folder among with other things like the Angular Material Module.
+*/
+
+// Mili Main Theme:
+// Basically the Mili colours used in their profile pictures for social media platforms & such.
+$mili-main-primary: #61b5b7;
+$mili-main-secondary: #ffffff;
