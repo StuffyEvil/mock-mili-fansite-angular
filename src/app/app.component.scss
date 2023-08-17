@@ -1,5 +1,5 @@
 // Importing List of Themes.
-@import "\shared\themes-list.scss";
+@import "./shared/themes-list.scss";
 
 
 // Header:
@@ -9,13 +9,14 @@
   position: sticky;
   display: flex;
   align-items: flex-end;
-  // background-color: $mili-main;
-}
+  background-color: $mili-main-primary;
+};
 
 // Footer:
 #footer {
   padding: 1%;
-}
+  background-color: $mili-main-primary;
+};
 
 
 /* CSS for Navigational Stuff */
@@ -27,18 +28,25 @@ ul
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
+};
 
 // List Units:
 li
 {
   float: left;
   margin: 5px;
-}
+};
 
 // Buttons:
 .button
 {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
-}
+  background-color: $mili-main-secondary;
+};
+
+// Links::after
+.links
+{
+  background-color: $mili-main-secondary;
+};
